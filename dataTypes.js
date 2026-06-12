@@ -4,6 +4,38 @@
     // String
         // '4444'  "      "  ``
         //  4 + 4 + '4' = '84'
+        const str = '      limdi Game gadi mali      Game'
+        console.log('length =====>', str.length);
+        console.log('charAt ======>', str.charAt(11));
+        console.log('At ======>', str.at(11));
+        console.log('[] ======>', str[11]);
+        console.log('charAt ======>', str.charCodeAt(11));
+        console.log('concat =======>', str.concat(' ', 'ane', ' ', 'accident thayu'));
+        console.log('concat =======>', str + ' ' + 'ane' + ' ' + 'accident thayu');
+        console.log('slice ====>', str.slice(undefined, -10));
+        console.log('substring ======>', str.substring(3, 10));
+        console.log('substring ======>', str.toUpperCase());
+        console.log('substring ======>', str.substring(3, 10));
+        console.log('trim ======>', str.trim());
+        console.log('trim start ======>', str.trimStart());
+        console.log('trim end ======>', str.trimEnd());
+        console.log('pad start ======>', str.padStart(50, '*'));
+        console.log('pad end ======>', str.padEnd(50, '*'));
+        console.log('replace ======>', str.replace('l', 'L'));
+        console.log('replace ======>', str.replaceAll('l', 'L'));
+        console.log('split ======>', str.split(' '));
+
+        console.log('indexof =====>', str.indexOf('Game'));
+        console.log('lastIndexof =====>', str.lastIndexOf('Game'));
+        console.log('include =====>', str.includes('game'));
+        console.log('startsWith =====>', str.startsWith('Game'));
+        console.log('endsWith =====>', str.endsWith('Game'));
+        
+        const iq = 10
+        const str2 = `this person is having an IQ of ${iq}`
+        console.log(str2);
+        
+        
     // Number
         // 234234234 || 23234.4454 || -234234.234 || -2^53 to 2^53
     // Null
