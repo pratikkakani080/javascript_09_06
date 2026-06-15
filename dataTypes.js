@@ -38,14 +38,25 @@
         
     // Number
         // 234234234 || 23234.4454 || -234234.234 || -2^53 to 2^53
+        const num = 1000000000000000
+        const fltNum = 3.3535345
+        console.log('exponential ======>', num.toExponential(1))
+        console.log('fltnum ======>', fltNum.toFixed(3))
+
+
     // Null
         // null
+        const time = null
+
     // Undefined
         // undefined
+
     // Boolean
         // true || false
+
     // BigInt
         // 1n
+
     // Symbol
         // Symbol() === Symbol() = false
 
@@ -65,3 +76,36 @@
     // Array
         const numbers = [1, 2, 3, 4, 5];
     // Function
+        // normal function
+        const test = 'ds'
+            function handleChange(arg1, a2, a3, a4, a5, a6, a7, a8) {
+                // it will run only when you call the function
+                console.log('<========== inside function ======>', arg1, a2, a3, a4, a5, a6, a7, a8)
+            }
+            handleChange(test, 10, true, 'false', [], {}, 1n, () => {})
+            
+        // arrow function
+            const handleClick = () => {
+                console.log('function is about click')
+                return 'returned value'
+            }
+
+        // self invoked funtion
+            (function () {
+                // it will run only when you call the function
+                console.log('<========== self invoked inside function ======>')
+            })()
+            
+        // callback function
+            handleChange(test, 10, true, [], {}, 1n, _, handleClick())
+            // callback hell
+
+        // async function
+            // async function adsad() {
+            //     await ashdadhaiudhaisd
+            //     toast
+            // }
+
+            // const asfadda = async () => {
+
+            // } 
