@@ -63,7 +63,7 @@
 // NOn-premitive / Complex
     // Object
       const person = {
-            name: 'Pratik',
+            fName: 'John',
             age: 30,
             address: {
                 city: 'Ahmedabad',
@@ -73,6 +73,33 @@
             isActive: true,
             hobbies: ['coding', 'reading', 'gaming'] 
         }
+        person.hobbies = ['coding', 'reading', 'gaming', 'riding a bike']
+        console.log("🚀 ~ person:", person)
+        console.log("🚀 ~ person.name:", person.isActive)
+        console.log("🚀 ~ person.name:", person['height'])
+    //    const person2 = Object.assign(person, { name: 'Pratik', age: 30, address: { city: 'Ahmedabad', state: 'Gujarat' }, height: 5.11, isActive: true, hobbies: ['coding', 'reading', 'gaming'] })
+    //    delete person2.name
+    //    console.log("🚀 ~ person2:", person2)
+
+        // convert object to string
+            console.log(JSON.stringify(person))
+            console.log(JSON.parse(JSON.stringify(person)))
+
+            // Object.keys()
+            console.log("🚀 ~ Object.keys():", Object.keys(person))
+            // Object.values()
+            console.log("🚀 ~ Object.values():", Object.values(person))
+            // Object.entries()
+            console.log("🚀 ~ Object.entries():", Object.entries(person))
+
+            // object destructuring
+            const { fName, hobbies, age } = person
+
+            const name = 'test'
+            console.log("🚀 ~ name:", name)
+            
+            console.log("🚀 ~ name:", fName)
+            
     // Array
         const numbers = [1, 2, 3, 4, 5];
     // Function
@@ -97,7 +124,7 @@
             })()
             
         // callback function
-            handleChange(test, 10, true, [], {}, 1n, _, handleClick())
+            // handleChange(test, 10, true, [], {}, 1n, _, handleClick())
             // callback hell
 
         // async function
