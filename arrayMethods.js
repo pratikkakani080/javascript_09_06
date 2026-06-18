@@ -74,12 +74,36 @@ arrOfNum[0] = 100
     
     let newArr = []
     arrOfNum.forEach((element, index, ar) => {
-        console.log(element * 2, index, ar);
+        // console.log(element * 2, index, ar);
         newArr.push(element * 2)
     })
-    console.log(newArr);
+    // console.log(newArr);
 
-    console.log('mappng ====>', arrOfNum.map((e, i, a) => e * 2))
+    // console.log('mappng ====>', arrOfNum.map((e, i, a) => e * 2))
+    // console.log('mappng ====>', arrOfNum.filter((e, i, a) => e > 10))
+    // console.log("🚀 ~ arrOfNum:", arrOfNum.every((e, i, a) => e > 0))
+    // console.log("🚀 ~ arrOfNum:", arrOfNum.some((e, i, a) => e > 1000))
     
-    console.log('mappng ====>', arrOfNum.filter((e, i, a) => e > 10))
+    // ... spread syntax
+    const arr1 = ['Harvil', 'Ayan', 'Ketal']
+
+    const [name1, ...rest] = arr1
+    // console.log(name1, rest);
     
+    const arr2 = ['Mit', 'Mahek', 'Krish', 'Mitul']
+    const arr3 = ['Priyanshi']
+    
+    // console.log("🚀 ~ arr1:", [...arr1, ...arr2, ...arr3] )
+    
+    const obj1 = { name: 'mahek' }
+    const obj2 = { age: 20 }
+    const obj3 = { add: 'katargam' }
+
+    // console.log({...obj1, ...obj2, ...obj3});
+    
+
+    console.log(arrOfNum);
+    console.log(arrOfNum.reduce((accumulator, currentValue) => {
+        console.log(accumulator, currentValue);
+        return `${accumulator}${currentValue}`
+    }, 0))
